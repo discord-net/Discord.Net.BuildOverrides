@@ -9,7 +9,7 @@ namespace BuildOverrideService.Routes
 {
     public class GetBuildOverride : RestModuleBase
     {
-        [Route("/override/{name}", "GET")]
+        [Route("/overrides/{name}", "GET")]
         public Task<RestResult> ExecuteAsync(string name)
         {
             if (!OverrideService.TryGetOverride(name, out var metadata) || metadata == null)

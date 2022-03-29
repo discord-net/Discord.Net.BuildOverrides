@@ -11,7 +11,7 @@ namespace BuildOverrideService.Routes
 {
     public class GetDependency : RestModuleBase
     {
-        [Route("/override/{id}/dependency", "POST")]
+        [Route("/overrides/{id}/dependency", "POST")]
         public async Task<RestResult> ExecuteAsync(string id)
         {
             if (!Guid.TryParse(id, out var guid))

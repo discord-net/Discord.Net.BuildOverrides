@@ -12,7 +12,7 @@ namespace BuildOverrideService.Routes
 {
     public class AddOverride : RestModuleBase
     {
-        [Route("/override", "POST")]
+        [Route("/overrides", "POST")]
         public async Task<RestResult> ExecuteAsync()
         {
             var authHeader = Request.Headers.Get("Authorization");

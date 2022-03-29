@@ -9,7 +9,7 @@ namespace BuildOverrideService.Routes
 {
     public class DownloadBuildOverride : RestModuleBase
     {
-        [Route("/override/download/{id}", "GET")]
+        [Route("/overrides/download/{id}", "GET")]
         public async Task<RestResult> ExecuteAsync(string id)
         {
             if (!Guid.TryParse(id, out var guid))
